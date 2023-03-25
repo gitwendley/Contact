@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="sidebar">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <div class="social-icons">
+      <a href="#">
+        <img src="https://img.icons8.com/color/48/000000/facebook.png" alt="Facebook">
+      </a>
+      <a href="#">
+        <img src="https://img.icons8.com/color/48/000000/twitter-squared.png" alt="Twitter">
+      </a>
+      <a href="#">
+        <img src="https://img.icons8.com/color/48/000000/instagram-new--v2.png" alt="Instagram">
+      </a>
+    </div>
+  </div>
+
+  <div class="content">
+    <form id="form">
+      <div class="field">
+        <label for="from_name">from_name</label>
+        <input type="text" name="from_name" id="from_name">
+      </div>
+      <div class="field">
+        <label for="to_name">to_name</label>
+        <input type="text" name="to_name" id="to_name">
+      </div>
+      <div class="field">
+        <label for="email_id">email_id</label>
+        <input type="text" name="email_id" id="email_id">
+      </div>
+      <div class="field">
+        <label for="message">message</label>
+        <input type="text" name="message" id="message">
+      </div>
+      <div class="field">
+        <label for="reply_to">reply_to</label>
+        <input type="text" name="reply_to" id="reply_to">
+      </div>
+
+      <input type="submit" id="button" value="Send Email">
+    </form>
+
+    <script type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+      emailjs.init('Rs79oPKkDWtDYBMds')
+    </script>
+  </div>
+
+</body>
+</html>
